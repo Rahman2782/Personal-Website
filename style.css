@@ -1,0 +1,97 @@
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', sans-serif;
+
+}
+
+body {
+    background-color: #0f1014;
+}
+
+.logo {
+    height: 68px;
+    cursor: pointer; /*makes image have visible click option*/
+    padding-right: 700px;
+}
+
+li {
+    color: white;
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 300;
+    list-style: none; /*removes bullet points from list*/
+    padding: 0;
+
+}
+
+a {
+    text-decoration: none; /*removes underlines from links*/
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /*evenly distributes sections on headers*/
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.nav_links li {
+    display: inline-block; /*makes list horizontal instead of vertical(default)*/
+    margin: 0 20px;
+    position: relative;
+    padding-bottom: 0.25rem;
+
+}
+
+.nav_links li::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 0%;
+    background-color: white;
+    transition: width 0.45s ease-out;
+}
+
+.nav_links li:hover::before {
+    width: 100%;
+}
+
+/*main box - name, desc, image*/
+.home-detail h1 {
+    font-size: 55px;
+    line-height: 2;
+    width: 100%;
+}
+
+.home-detail h2 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.mainbox {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.home-img {
+    width: 400px;
+    height: 400px;
+    background: #ff00dd;
+}
+
+.home-img .img-box img {
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 0 40px #ff00dd;
+}
+
